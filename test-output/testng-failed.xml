@@ -5,8 +5,7 @@
     <classes>
       <class name="com.w2a.APITestingFrameworkTestCases.CreateCustomerTest">
         <methods>
-          <include name="InvalidateCreateCustomerAPIWithValidSecretKey"/>
-          <include name="validateCreateCustomerAPIWithValidSecretKey"/>
+          <include name="validateCreateCustomerAPIWithValidSecretKey" invocation-numbers="0 1 2"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
