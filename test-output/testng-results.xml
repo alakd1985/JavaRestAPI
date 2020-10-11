@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3030" started-at="2020-10-11T13:56:34 EDT" finished-at="2020-10-11T13:56:37 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3030" started-at="2020-10-11T13:56:34 EDT" finished-at="2020-10-11T13:56:37 EDT">
+      <class name="com.w2a.APITestingFrameworkTestCases.CreateCustomerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@397fbdb]" name="setup" is-config="true" duration-ms="403" started-at="2020-10-11T13:56:34 EDT" finished-at="2020-10-11T13:56:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="InvalidateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@397fbdb]" name="InvalidateCreateCustomerAPIWithValidSecretKey" duration-ms="1934" started-at="2020-10-11T13:56:35 EDT" data-provider="data" finished-at="2020-10-11T13:56:36 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=t@gmail.com, name=toma, description=no comment}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidateCreateCustomerAPIWithValidSecretKey -->
+        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@397fbdb]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="319" started-at="2020-10-11T13:56:36 EDT" data-provider="data" finished-at="2020-10-11T13:56:37 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=a@gmail.com, name=alak, description=none}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
+        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@397fbdb]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="323" started-at="2020-10-11T13:56:37 EDT" data-provider="data" finished-at="2020-10-11T13:56:37 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=t@gmail.com, name=toma, description=none}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
+        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@397fbdb]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="387" started-at="2020-10-11T13:56:37 EDT" data-provider="data" finished-at="2020-10-11T13:56:37 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=r@gmail.com, name=rakesh, description=this is the first test}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@397fbdb]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-10-11T13:56:38 EDT" finished-at="2020-10-11T13:56:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.APITestingFrameworkTestCases.CreateCustomerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
