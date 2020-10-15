@@ -1,65 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2794" started-at="2020-10-11T20:20:53 EDT" finished-at="2020-10-11T20:20:56 EDT">
+  <suite name="Default suite" duration-ms="6387" started-at="2020-10-12T11:04:30 EDT" finished-at="2020-10-12T11:04:37 EDT">
     <groups>
     </groups>
-    <test name="Create Customer Test" duration-ms="2794" started-at="2020-10-11T20:20:53 EDT" finished-at="2020-10-11T20:20:56 EDT">
-      <class name="com.w2a.APITestingFrameworkTestCases.CreateCustomerTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@5fa07e12]" name="setup" is-config="true" duration-ms="370" started-at="2020-10-11T20:20:52 EDT" finished-at="2020-10-11T20:20:53 EDT">
+    <test name="Default test" duration-ms="6387" started-at="2020-10-12T11:04:30 EDT" finished-at="2020-10-12T11:04:37 EDT">
+      <class name="com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="setup" is-config="true" duration-ms="568" started-at="2020-10-12T11:04:30 EDT" finished-at="2020-10-12T11:04:30 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="InvalidateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@5fa07e12]" name="InvalidateCreateCustomerAPIWithValidSecretKey" duration-ms="1544" started-at="2020-10-11T20:20:53 EDT" data-provider="data" finished-at="2020-10-11T20:20:54 EDT">
+        <test-method status="PASS" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="deleteCustomer" duration-ms="3049" started-at="2020-10-12T11:04:30 EDT" data-provider="data" finished-at="2020-10-12T11:04:33 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=t@gmail.com, name=toma, description=no comment}]]>
+                <![CDATA[{id=cus_IBc0ERhRyxXWsL}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidateCreateCustomerAPIWithValidSecretKey -->
-        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@5fa07e12]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="353" started-at="2020-10-11T20:20:54 EDT" data-provider="data" finished-at="2020-10-11T20:20:55 EDT">
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="deleteCustomer" duration-ms="657" started-at="2020-10-12T11:04:33 EDT" data-provider="data" finished-at="2020-10-12T11:04:34 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=a@gmail.com, name=alak, description=This is the first test}]]>
+                <![CDATA[{id=cus_IBc00mEJZdW8Kg}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
-        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@5fa07e12]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="351" started-at="2020-10-11T20:20:55 EDT" data-provider="data" finished-at="2020-10-11T20:20:55 EDT">
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="deleteCustomer" duration-ms="577" started-at="2020-10-12T11:04:34 EDT" data-provider="data" finished-at="2020-10-12T11:04:35 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=t@gmail.com, name=toma, description=This is the second test}]]>
+                <![CDATA[{id=cus_IBc09g64O3FaQE}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
-        <test-method status="PASS" signature="validateCreateCustomerAPIWithValidSecretKey(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@5fa07e12]" name="validateCreateCustomerAPIWithValidSecretKey" duration-ms="373" started-at="2020-10-11T20:20:55 EDT" data-provider="data" finished-at="2020-10-11T20:20:56 EDT">
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="deleteCustomer" duration-ms="649" started-at="2020-10-12T11:04:35 EDT" data-provider="data" finished-at="2020-10-12T11:04:35 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{email=r@gmail.com, name=rakesh, description=This is the third test}]]>
+                <![CDATA[{id=cus_IBc0ej42CA1Txb}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateCustomerAPIWithValidSecretKey -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.APITestingFrameworkTestCases.CreateCustomerTest@5fa07e12]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-10-11T20:20:56 EDT" finished-at="2020-10-11T20:20:56 EDT">
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="deleteCustomer" duration-ms="833" started-at="2020-10-12T11:04:35 EDT" data-provider="data" finished-at="2020-10-12T11:04:36 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=cus_IBc0J46XloVal7}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="deleteCustomer(java.util.Hashtable)[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="deleteCustomer" duration-ms="541" started-at="2020-10-12T11:04:36 EDT" data-provider="data" finished-at="2020-10-12T11:04:37 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=cus_IBc0swmV0KXVgB}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest@5fe94a96]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-10-12T11:04:37 EDT" finished-at="2020-10-12T11:04:37 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.w2a.APITestingFrameworkTestCases.CreateCustomerTest -->
-    </test> <!-- Create Customer Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

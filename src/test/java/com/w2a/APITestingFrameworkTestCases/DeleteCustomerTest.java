@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.w2a.APITestingFramework.utilities.DataUtil;
+import com.w2a.APITestingFramework.utilities.TestUtils;
 import com.w2a.APITestingFrameworkSetUp.BaseTest;
 
 import APITestingFramework.APIs.DeleteCustomerAPI;
@@ -21,6 +22,17 @@ public class DeleteCustomerTest extends BaseTest {
 
 		response.prettyPrint();
 		System.out.println(response.getStatusCode());
+		//
+
+		Assert.assertTrue(TestUtils.JsonhasKey(response.asString(), "id"), "Id key is not present");
+
+		String actual_id = TestUtils.getJasonKeyValue(response.asString(), "id");
+		System.out.println("Actual id is :: " + actual_id);
+
+		Assert.assertEquals(actual_id, data.get("id"));
+		System.out.println("Object key value is:: " + TestUtils.getJasonKeyValue(response.asString(), "object"));
+		System.out.println("Deleted key value is:: " + TestUtils.getJasonKeyValue(response.asString(), "deleted"));
+
 		Assert.assertEquals(response.statusCode(), 200);
 	}
 
