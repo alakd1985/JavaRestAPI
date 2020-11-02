@@ -15,5 +15,17 @@
 				<class
 					name="com.w2a.APITestingFrameworkTestCases.CreateCustomerTest" />
 			</classes>
-		</test> <!-- Test -->
+				
+			
+		 </test> <!-- Test -->
+		
+		<!-- <test name="Delete Customer Test">
+			<classes>
+
+				<class
+					name="com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest" />
+			</classes>
+				
+			
+	 </test> Test -->
 	</suite> <!-- Suite -->

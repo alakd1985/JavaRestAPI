@@ -10,6 +10,7 @@ import com.w2a.APITestingFramework.utilities.TestUtils;
 import com.w2a.APITestingFrameworkSetUp.BaseTest;
 
 import APITestingFramework.APIs.DeleteCustomerAPI;
+import Listener.ExtentListeners;
 import io.restassured.response.Response;
 
 public class DeleteCustomerTest extends BaseTest {
@@ -18,11 +19,11 @@ public class DeleteCustomerTest extends BaseTest {
 	public void deleteCustomer(Hashtable<String, String> data) {
 
 		Response response = DeleteCustomerAPI.sendDeleteRequesttoDeleteCustomerAPIWithValidId(data);
-		// ExtentListeners.testReport.get().info(data.toString());
+		ExtentListeners.testReport.get().info(data.toString());
 
 		response.prettyPrint();
 		System.out.println(response.getStatusCode());
-		//
+	
 
 		Assert.assertTrue(TestUtils.JsonhasKey(response.asString(), "id"), "Id key is not present");
 

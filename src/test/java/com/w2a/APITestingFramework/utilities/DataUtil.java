@@ -69,8 +69,6 @@ public class DataUtil extends BaseTest {
 
 			for (int cNum = 0; cNum < testCols; cNum++) {
 
-				// System.out.println(excel.getCellData(config.getProperty("testDataSheetName"),
-				// cNum, rNum));
 				String testData = excel.getCellData(config.getProperty("testDataSheetName"), cNum, rNum);
 				String colName = excel.getCellData(config.getProperty("testDataSheetName"), cNum, colStartColNum);
 

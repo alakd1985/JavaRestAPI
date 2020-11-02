@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="Listener.ExtentListeners"/>
   </listeners>
-  <test thread-count="5" name="Create Customer Test(failed)">
+  <test thread-count="5" name="Delete Customer Test(failed)">
     <classes>
-      <class name="com.w2a.APITestingFrameworkTestCases.CreateCustomerTest">
+      <class name="com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest">
         <methods>
-          <include name="InvalidateCreateCustomerAPIWithValidSecretKey" invocation-numbers="0"/>
-          <include name="validateCreateCustomerAPIWithValidSecretKey" invocation-numbers="0 1 2"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="deleteCustomer" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
-      </class> <!-- com.w2a.APITestingFrameworkTestCases.CreateCustomerTest -->
+      </class> <!-- com.w2a.APITestingFrameworkTestCases.DeleteCustomerTest -->
     </classes>
-  </test> <!-- Create Customer Test(failed) -->
+  </test> <!-- Delete Customer Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

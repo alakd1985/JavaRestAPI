@@ -8,7 +8,6 @@ import com.w2a.APITestingFramework.utilities.DataUtil;
 import com.w2a.APITestingFrameworkSetUp.BaseTest;
 
 import APITestingFramework.APIs.CreateCustomerAPI;
-import Listener.ExtentListeners;
 import io.restassured.response.Response;
 
 public class CreateCustomerTest extends BaseTest {
@@ -17,7 +16,7 @@ public class CreateCustomerTest extends BaseTest {
 	public void validateCreateCustomerAPIWithValidSecretKey(Hashtable<String, String> data) {
 
 		Response response = CreateCustomerAPI.sendPostRequesttoCreateCustomerAPIWithValidAuthKey(data);
-		ExtentListeners.testReport.get().info(data.toString());
+		// ExtentListeners.testReport.get().info(data.toString());
 
 		response.prettyPrint();
 		System.out.println(response.getStatusCode());
